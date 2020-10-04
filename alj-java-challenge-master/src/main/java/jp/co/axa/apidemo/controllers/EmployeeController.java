@@ -1,6 +1,7 @@
 package jp.co.axa.apidemo.controllers;
 
 import jp.co.axa.apidemo.entities.Employee;
+import jp.co.axa.apidemo.entities.EmployeeModel;
 import jp.co.axa.apidemo.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +31,7 @@ public class EmployeeController {
     }
 
     @PostMapping("/employees")
-    public void saveEmployee(Employee employee){
+    public void saveEmployee(@RequestBody EmployeeModel employee){
         employeeService.saveEmployee(employee);
         System.out.println("Employee Saved Successfully");
     }
