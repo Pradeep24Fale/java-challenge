@@ -37,4 +37,9 @@ public class Employee implements Serializable {
     @Column(name="DEPARTMENT")
     private String department;
 
+
+    public Employee() {
+    }
+
+
 }
