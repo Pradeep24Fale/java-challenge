@@ -6,8 +6,9 @@
    - this will generate JWT token.
    - copy this token and click Authorize button on header bar.
    - paste token inside input API_KEY text box in below formate.
-      -[*Bearer {token}]
-      -*note: please check space between.
+   - [Bearer {token}]
+   - e.g Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJBZG1pbiIsImV4cCI6MTYwMTg4MTk4NCwiaWF0IjoxNjAxODYzOTg0fQ.3yBzsfX0YnsZgTT2oq8Q1s347x2IGb1UR-AE9ut5Ofc
+   - note: please check space between.
    - then you can acess below employee API's.  
 2. Added cache.
 3. Added test cases.
